@@ -10,20 +10,30 @@ package lesson_8;
  */
 public class Shirt {
 
-    public Shirt() {
-        System.out.println("In the constructor");
-        description = " description required";
-        colorCode = 'U';
-        price = 0;
-    }
-
     public String description;
     public char colorCode;
     public double price;
+
+    public Shirt(String desc, String color, double price) {
+        setFields(desc, price);
+        setColor(color);
+        display();
+    }
+
+    public void setColor(String color) {
+        if (color.length() > 0) {
+            colorCode = color.charAt(0);
+        }
+    }
 
     public void display() {
         System.out.println("Shirt description: " + description);
         System.out.println("Color code: " + colorCode);
         System.out.println("Shirt price: " + price);
+    }
+
+    public void setFields(String desc, double price) {
+        this.description = desc;
+        this.price = price;
     }
 }

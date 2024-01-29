@@ -11,8 +11,25 @@ package lesson_8;
 public class ShoppingCart {
 
     public static void main(String[] args) {
-        Shirt myShirt = new Shirt();
-        myShirt.display();
+
+//        Shirt shirt01 = new Shirt("Hoodie", "Blue", 55);
+//
+//        Shirt shirt02 = new Shirt("Pants", "green", 55);
+//
+//        Shirt shirt03 = new Shirt("Sweater", "Orange", 55);
+//
+//        Shirt shirt04 = new Shirt("Vest", "red", 55);
+
+        Shirt myShirt =  new Shirt("sailer", "green", 300);
+        System.out.println(myShirt.colorCode);
+        changeShirtColor(myShirt, 'B');
+        System.out.println("Shirt color after: " + myShirt.colorCode);
+
+            
     }
+    public static void changeShirtColor(Shirt theShirt, char color){
+                theShirt = new Shirt("sailor2","Yellow", 199);
+                theShirt.colorCode = color;
+            }
 
 }
