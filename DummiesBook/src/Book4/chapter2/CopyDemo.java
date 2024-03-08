@@ -1,0 +1,23 @@
+package Book4.chapter2;
+import java.util.Arrays;
+
+public class CopyDemo {
+    public static void main(String[] args) {
+        int arrayOriginal[] = {42,55,21};
+        int arrayNew[] = Arrays.copyOf(arrayOriginal,3);
+
+        printArray(arrayNew);
+
+
+    }
+
+    static void printArray(int arrayNew[])
+    {
+        for(int i : arrayNew)
+        {
+            System.out.print(i);
+            System.out.print(' ');
+        }
+        System.out.println();
+    }
+}
