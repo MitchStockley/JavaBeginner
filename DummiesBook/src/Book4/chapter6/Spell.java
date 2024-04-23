@@ -64,7 +64,7 @@ public class Spell {
         System.out.println("\n Start of parallel streams");
 
         spells.parallelStream()
-                .forEach(s -> System.out.println(s));
+                .forEach(s -> System.out.println(s.toString()));
 
 
 
